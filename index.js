@@ -7,7 +7,8 @@ const mondayWork = function (activity = "go to the office") {
 }
 
 function wrapAdjective (flair = "*") {
-    return innerFunction = function (adjective = "special") {
+    const message = function (adjective = "special") {
         return `You are ${flair}${adjective}${flair}!`;
-    }
+    };
+    return message;
 }
